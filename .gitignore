@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+data/private/
+data/chroma/
+
+START_HERE.txt

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cv_ner",
+    "document": "sample_redacted.pdf",
+    "question": "Which transformer models did Asaad fine-tune for named entity recognition, and what F1 score did he achieve?",
+    "expected_pages": [
+      1
+    ],
+    "expect_abstention": false,
+    "review_criteria": "Names ruBERT and mDeBERTa and F1 89.78%."
+  },
+  {
+    "id": "cv_improvements",
+    "document": "sample_redacted.pdf",
+    "question": "Which two work activities reported a 30% efficiency improvement?",
+    "expected_pages": [
+      1
+    ],
+    "expect_abstention": false,
+    "review_criteria": "Names GPS Visualizer mapping for field research and Python-SQL pipelines for data collection, each with 30%. Outcomes alone are incomplete."
+  },
+  {
+    "id": "cv_nlp",
+    "document": "sample_redacted.pdf",
+    "question": "What evidence does the CV give of NLP work in both professional experience and a project?",
+    "expected_pages": [
+      1,
+      2
+    ],
+    "expect_abstention": false,
+    "review_criteria": "Covers professional NER work and real estate review sentiment/classification/topic modeling."
+  },
+  {
+    "id": "cv_missing_metrics",
+    "document": "sample_redacted.pdf",
+    "question": "What was the exact precision and recall achieved by the credit card anomaly detection model?",
+    "expected_pages": [],
+    "expect_abstention": true,
+    "review_criteria": "Abstains because numerical precision and recall are absent."
+  },
+  {
+    "id": "spark_submission",
+    "document": "Spark AI-technical skills assessment.pdf",
+    "question": "What are the submission instructions?",
+    "expected_pages": [
+      1,
+      4
+    ],
+    "expect_abstention": false,
+    "review_criteria": "GitHub repository URL, README describing approach/decisions/results, mandatory functional public inference deployment and its link in README. Docker/demo are optional."
+  },
+  {
+    "id": "spark_cv_question",
+    "document": "Spark AI-technical skills assessment.pdf",
+    "question": "Which two work activities reported a 30% efficiency improvement?",
+    "expected_pages": [],
+    "expect_abstention": true,
+    "review_criteria": "Abstains and does not use CV facts."
+  }
+]
